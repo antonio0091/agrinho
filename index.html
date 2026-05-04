@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro é Top</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            margin-top: 50px;
+        }
+
+        #agro-top {
+            font-size: 4em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffcc00, 0 0 20px #ffcc00, 0 0 25px #ffcc00, 0 0 30px #ffcc00, 0 0 35px #ffcc00;
+            animation: ledEffect 2s infinite alternate;
+        }
+
+        @keyframes ledEffect {
+            0% {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #009c3d, 0 0 20px #009c3d, 0 0 25px #009c3d, 0 0 30px #009c3d, 0 0 35px #ffcc00;
+            }
+            25% {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffcc00, 0 0 20px #ffcc00, 0 0 25px #ffcc00, 0 0 30px #ffcc00, 0 0 35px #ffcc00;
+            }
+            50% {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #3e4095, 0 0 20px #3e4095, 0 0 25px #3e4095, 0 0 30px #3e4095, 0 0 35px #ffcc00;
+            }
+            75% {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffcc00, 0 0 20px #ffcc00, 0 0 25px #ffcc00, 0 0 30px #ffcc00, 0 0 35px #ffcc00;
+            }
+            100% {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #009c3d, 0 0 20px #009c3d, 0 0 25px #009c3d, 0 0 30px #009c3d, 0 0 35px #ffcc00;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="agro-top">Agro é Top</h1>
+    </header>
+    <script>
+        // Se você quiser adicionar algum comportamento dinâmico com JavaScript, pode adicionar aqui
+        // No momento, o código está apenas configurado para o efeito de LED em CSS
+    </script>
+</body>
+</html>

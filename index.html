@@ -3,63 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro é Top</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-
-        header {
-            margin-top: 50px;
-        }
-
-        #agro-top {
-            font-size: 4em;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: #fff;
-            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffcc00, 0 0 20px #ffcc00, 0 0 25px #ffcc00, 0 0 30px #ffcc00, 0 0 35px #ffcc00;
-            animation: ledEffect 2s infinite alternate;
-        }
-
-        @keyframes ledEffect {
-            0% {
-                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #009c3d, 0 0 20px #009c3d, 0 0 25px #009c3d, 0 0 30px #009c3d, 0 0 35px #ffcc00;
-            }
-            25% {
-                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffcc00, 0 0 20px #ffcc00, 0 0 25px #ffcc00, 0 0 30px #ffcc00, 0 0 35px #ffcc00;
-            }
-            50% {
-                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #3e4095, 0 0 20px #3e4095, 0 0 25px #3e4095, 0 0 30px #3e4095, 0 0 35px #ffcc00;
-            }
-            75% {
-                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffcc00, 0 0 20px #ffcc00, 0 0 25px #ffcc00, 0 0 30px #ffcc00, 0 0 35px #ffcc00;
-            }
-            100% {
-                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #009c3d, 0 0 20px #009c3d, 0 0 25px #009c3d, 0 0 30px #009c3d, 0 0 35px #ffcc00;
-            }
-        }
-    </style>
+    <title>Agro Sustentável - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 id="agro-top">Agro é Top</h1>
-    </header>
-    <script>
-        // Se você quiser adicionar algum comportamento dinâmico com JavaScript, pode adicionar aqui
-        // No momento, o código está apenas configurado para o efeito de LED em CSS
-    </script>
+
+    <div class="game-container">
+        <header>
+            <h2>Agro Forte</h2>
+            <p>Equilíbrio e Sustentabilidade</p>
+        </header>
+        
+        <div class="stats">
+            <div>Nível: <span id="level">1</span></div>
+            <div>XP: <span id="xp-atual">0</span> / <span id="xp-limite">100</span></div>
+        </div>
+
+        <div class="xp-container">
+            <div id="xp-bar"></div>
+        </div>
+
+        <div class="actions">
+            <button class="btn-plantar" onclick="ganharXP(20, 'Semente plantada com sucesso!')">
+                Plantar 🌱
+            </button>
+            <button class="btn-regar" onclick="ganharXP(10, 'Irrigação eficiente aplicada!')">
+                Regar 💧
+            </button>
+            <button class="btn-colher" onclick="ganharXP(30, 'Colheita farta e sustentável!')">
+                Colher 🚜
+            </button>
+            <button class="btn-bio" onclick="ganharXP(15, 'Bioinsumos aplicados no solo!')">
+                Bioinsumo 🌿
+            </button>
+        </div>
+
+        <div id="mensagem">Clique em uma ação para começar!</div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
